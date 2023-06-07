@@ -5,10 +5,10 @@ from main.plugins.display_progress import progress_for_pyrogram
 
 from decouple import config
 
-API_ID = config("API_ID", default=None, cast=int)
-API_HASH = config("API_HASH", default=None)
-BOT_TOKEN = config("BOT_TOKEN", default=None)
-SESSION = config("SESSION", default=None) #pyro session
+API_ID = config("API_ID", 12916125 , cast=int)
+API_HASH = config("API_HASH", "dfebf9cc52b859771cf8a1d447e751a5")
+BOT_TOKEN = config("BOT_TOKEN", "5785101195:AAHbWMBDku6q9tWJdMIJtJvhEl3ajmC0spQ")
+SESSION = config("SESSION", "BQCu4-U3pkQyeTpFy8uiGjMgwmlTOFKF8_f7XpwMjSC3pVBvGqk8Uo6L3HqIZJ7yFb1dUOrZ7-bSKjWWG_pciwHliG6HgQbE3Gwhfz-cN9lceKuQ9NHAecdVoAciniV75jPSUCJdXpHEkH7jVMoCYoL_yu87Xv7vWV0713CETERaSQ2m7ewaOb0JYmX19riKX0n5djmoqg-wqtV_gVfvytzow91KFzNCCbzojOOloNK-QZYxisln1vQsd40q7nuGfG-U8syOr3TW5ifU8l1I_xv4977wkF0k8oGMxMqXYXRTFo0aCqsJ1xstB0yeKr6QxkNFOkNSfDqwXcWvQ7vtmOocYnOlYQA") #pyro session
 
 from pyrogram.errors import FloodWait, BadRequest
 from pyrogram import Client, filters
